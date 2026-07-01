@@ -1,0 +1,96 @@
+[
+  {
+    "name": "SHL Global Skills Assessment",
+    "url": "https://www.shl.com/products/assessments/behavioral-assessments/global-skills-assessment-gsa/",
+    "test_type": [
+      "A",
+      "C",
+      "E",
+      "K"
+    ],
+    "duration_minutes": 15,
+    "remote_testing": null,
+    "adaptive_irt": null,
+    "description": "96 behavioral skills measured in 15 minutes. Objective, consistent skills data you can use from hiring decisions to development conversations to internal mobility. The SHL Global Skills Assessment gives organizations a consistent, science‑based view of behavioral skills across candidates and employees. It provides a shared language for understanding strengths, gaps, and the behaviors that drive performance. Because it’s built on one universal framework , the assessment creates a unified picture of skills across your organization. You can compare people fairly, understand capability at scale, and build a stronger foundation for development, mobility, and long‑term workforce planning. With one consistent framework before and after hire, you can use the SHL Global Skills Assessment in hiring, across your workforce, or both.",
+    "embedding_text": "SHL Global Skills Assessment A C E K 15 96 behavioral skills measured in 15 minutes. Objective, consistent skills data you can use from hiring decisions to development conversations to internal mobility. The SHL Global Skills Assessment gives organizations a consistent, science‑based view of behavioral skills across candidates and employees. It provides a shared language for understanding strengths, gaps, and the behaviors that drive performance. Because it’s built on one universal framework , the assessment creates a unified picture of skills across your organization. You can compare people fairly, understand capability at scale, and build a stronger foundation for development, mobility, and long‑term workforce planning. With one consistent framework before and after hire, you can use the SHL Global Skills Assessment in hiring, across your workforce, or both."
+  },
+  {
+    "name": "SHL Realistic Job Previews",
+    "url": "https://www.shl.com/products/assessments/behavioral-assessments/realistic-job-and-culture-previews-rjp/",
+    "test_type": [
+      "A",
+      "C"
+    ],
+    "duration_minutes": null,
+    "remote_testing": null,
+    "adaptive_irt": null,
+    "description": "SHL’s experts develop scenarios that best explain and showcase each job opportunity. Realistic Job and Culture Previews (RJP) feature customized questions and interactive multimedia, fully branded to your brand. Candidates are immersed in three or four (typically) realistic scenarios, choosing the response they feel is most appropriate to them. Candidates receive immediate feedback on their suitability. If they believe they are a good fit, they can proceed to the next stage of their hiring journey with your company. Learn how scenarios can help candidates understand your role and organization better.",
+    "embedding_text": "SHL Realistic Job Previews A C  SHL’s experts develop scenarios that best explain and showcase each job opportunity. Realistic Job and Culture Previews (RJP) feature customized questions and interactive multimedia, fully branded to your brand. Candidates are immersed in three or four (typically) realistic scenarios, choosing the response they feel is most appropriate to them. Candidates receive immediate feedback on their suitability. If they believe they are a good fit, they can proceed to the next stage of their hiring journey with your company. Learn how scenarios can help candidates understand your role and organization better."
+  },
+  {
+    "name": "Situational Judgement Tests",
+    "url": "https://www.shl.com/products/assessments/behavioral-assessments/situation-judgement-tests-sjt/",
+    "test_type": [
+      "C"
+    ],
+    "duration_minutes": null,
+    "remote_testing": null,
+    "adaptive_irt": null,
+    "description": "Match candidates’ behavioral fit to your roles with a situational judgment test. These tests are typically administered early in the assessment process, they provide candidates with a fully-branded introduction to your business. Candidates complete role and culture-based brief scenarios tailored to specific roles or drawn from SHL's bank for quick deployment. Our science evaluates each candidate's behavioral fit to your role using our Universal Competency Framework , the industry’s leading assessment of behavioral competency. Streamline candidate selection with Situational Judgement Tests (SJTs) for high-quality hires. SJTs are available within most SHL talent acquisition solutions.",
+    "embedding_text": "Situational Judgement Tests C  Match candidates’ behavioral fit to your roles with a situational judgment test. These tests are typically administered early in the assessment process, they provide candidates with a fully-branded introduction to your business. Candidates complete role and culture-based brief scenarios tailored to specific roles or drawn from SHL's bank for quick deployment. Our science evaluates each candidate's behavioral fit to your role using our Universal Competency Framework , the industry’s leading assessment of behavioral competency. Streamline candidate selection with Situational Judgement Tests (SJTs) for high-quality hires. SJTs are available within most SHL talent acquisition solutions."
+  },
+  {
+    "name": "Universal Competency Framework (UCF)",
+    "url": "https://www.shl.com/products/assessments/behavioral-assessments/universal-competency-framework/",
+    "test_type": [
+      "C",
+      "K"
+    ],
+    "duration_minutes": 15,
+    "remote_testing": null,
+    "adaptive_irt": null,
+    "description": "Competencies are ‘sets of behaviors that are instrumental in the delivery of desired results’ (Bartram et al, 2002). In the business context they are behaviors that support the attainment of objectives within the context of that specific organization’s strategy. Competencies are sometimes also called ‘capabilities’ but irrespective of the term used, the focus is on ‘behaviors’ not technical knowledge. The Universal Competency Framework (UCF) provides a rational, consistent, and practical basis for understanding people’s behaviors at work and their likelihood of succeeding in certain roles and environments. We constructed the UCF from our wide-reaching program of research on workplace behaviors, so it can be used to build competency models for all types of jobs or to map existing models onto a universal set of competency components. We also provide a full suite of talent management tools and content to support the UCF including APTA™, our patented, customizable personnel psychological testing tool for directly measuring the UCF competencies most important for success in a role. Additional tools include questionnaire items, behavioral anchors, interview questions, and assessment exercises for employee selection and development. These provide the source materials for building assessment programs. Most importantly, each competency component is linked to our portfolio of assessments . A competency framework allows organizations to align individual behaviors to group or corporate g",
+    "embedding_text": "Universal Competency Framework (UCF) C K 15 Competencies are ‘sets of behaviors that are instrumental in the delivery of desired results’ (Bartram et al, 2002). In the business context they are behaviors that support the attainment of objectives within the context of that specific organization’s strategy. Competencies are sometimes also called ‘capabilities’ but irrespective of the term used, the focus is on ‘behaviors’ not technical knowledge. The Universal Competency Framework (UCF) provides a rational, consistent, and practical basis for understanding people’s behaviors at work and their likelihood of succeeding in certain roles and environments. We constructed the UCF from our wide-reaching program of research on workplace behaviors, so it can be used to build competency models for all types of jobs or to map existing models onto a universal set of competency components. We also provide a full suite of talent management tools and content to support the UCF including APTA™, our patented, customizable personnel psychological testing tool for directly measuring the UCF competencies most important for success in a role. Additional tools include questionnaire items, behavioral anchors, interview questions, and assessment exercises for employee selection and development. These provide the source materials for building assessment programs. Most importantly, each competency component is linked to our portfolio of assessments . A competency framework allows organizations to align individual behaviors to group or corporate g"
+  },
+  {
+    "name": "SHL Motivational Questionnaire",
+    "url": "https://www.shl.com/products/assessments/personality-assessment/shl-motivation-questionnaire-mq/",
+    "test_type": [
+      "K",
+      "P"
+    ],
+    "duration_minutes": 20,
+    "remote_testing": null,
+    "adaptive_irt": null,
+    "description": "Understand what motivates your workforce and how to activate that knowledge. SHL’s Motivational Questionnaire provides specific insights that facilitate the best talent decisions. Participants rate a series of situations or conditions, deciding how each would affect their motivation to work. SHL utilizes the insights from the MQ to match the candidate with a tailored profile, leveraging our extensive expertise and considering your hiring or development needs. The motivation assessment scores are then delivered to your teams, directly integrated within your SHL talent acquisition or management solution.",
+    "embedding_text": "SHL Motivational Questionnaire K P 20 Understand what motivates your workforce and how to activate that knowledge. SHL’s Motivational Questionnaire provides specific insights that facilitate the best talent decisions. Participants rate a series of situations or conditions, deciding how each would affect their motivation to work. SHL utilizes the insights from the MQ to match the candidate with a tailored profile, leveraging our extensive expertise and considering your hiring or development needs. The motivation assessment scores are then delivered to your teams, directly integrated within your SHL talent acquisition or management solution."
+  },
+  {
+    "name": "SHL Occupational Personality Questionnaire (OPQ)",
+    "url": "https://www.shl.com/products/assessments/personality-assessment/shl-occupational-personality-questionnaire-opq/",
+    "test_type": [
+      "C",
+      "P"
+    ],
+    "duration_minutes": 20,
+    "remote_testing": null,
+    "adaptive_irt": null,
+    "description": "Get accurate, Insightful assessments of potential by matching individual working preferences directly to business requirements. Gain accurate, Insightful assessment of employee potential with SHL’s Occupational Personality Questionnaire. The OPQ helps you make more informed talent decisions. Participants answer questions about their working preferences to identify their strengths and areas for development within the universal competency framework. SHL quickly and reliably matches this understanding to a scientifically chosen profile, tailored to meet your hiring or development needs.",
+    "embedding_text": "SHL Occupational Personality Questionnaire (OPQ) C P 20 Get accurate, Insightful assessments of potential by matching individual working preferences directly to business requirements. Gain accurate, Insightful assessment of employee potential with SHL’s Occupational Personality Questionnaire. The OPQ helps you make more informed talent decisions. Participants answer questions about their working preferences to identify their strengths and areas for development within the universal competency framework. SHL quickly and reliably matches this understanding to a scientifically chosen profile, tailored to meet your hiring or development needs."
+  },
+  {
+    "name": "SVAR Assessment: Measure Real Spoken Language, at Scale",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/language-evaluation/svar/",
+    "test_type": [
+      "A",
+      "E",
+      "K",
+      "S"
+    ],
+    "duration_minutes": 15,
+    "remote_testing": null,
+    "adaptive_irt": null,
+    "description": "Assess genuine language skills across speaking, vocabulary, grammar, listening and comprehension — giving you a reliable signal you can trust in high-volume hiring. SHL SVAR is our automated spoken-language assessment designed to measure real communication ability. It evaluates how candidates speak and converse to give you a clear, evidence‑based view of workplace‑ready communication. SVAR supports 20+ languages and 7 accents , works on mobile and web , and takes just 12–15 minutes to complete. AI‑powered scoring delivers fast, consistent results so hiring teams can assess spoken‑language capability at scale.",
+    "embedding_text": "SVAR Assessment: Measure Real Spoken Language, at Scale A E K S 15 Assess genuine language skills across speaking, vocabulary, grammar, listening and comprehension — giving you a reliable signal you can trust in high-volume hiring. SHL SVAR is our automated spoken-language assessment designed to measure real communication ability. It evaluates how candidates speak and converse to give you a clear, evidence‑based view of workplace‑ready communication. SVAR supports 20+ languages and 7 accents , works on mobile and web , and takes just 12–15 minutes to complete. AI‑powered scoring delivers fast, consistent results so hiring teams can assess spoken‑language capability at scale."
+  }
+]
