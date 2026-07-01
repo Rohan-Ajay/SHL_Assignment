@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: shl-assessment-recommender
+    env: python
+    plan: free
+    buildCommand: python -m pip install --upgrade pip && python -m pip install -r requirements-deploy.txt
+    startCommand: python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: USE_SENTENCE_TRANSFORMERS
+        value: "false"
