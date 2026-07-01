@@ -3,8 +3,7 @@ services:
     name: shl-assessment-recommender
     env: python
     plan: free
-    pythonVersion: "3.12.7"          # ← add this line
-    buildCommand: python -m pip install --upgrade pip && python -m pip install -r requirements-deploy.txt
+    buildCommand: python --version && python -m pip install --upgrade pip && python -m pip install -r requirements-deploy.txt
     startCommand: python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     envVars:
