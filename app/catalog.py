@@ -99,11 +99,17 @@ def match_assessment_name(name: str, catalog: list[Assessment]) -> Assessment | 
 
 
 def validate_names(names: list[str], catalog: list[Assessment]) -> list[Assessment]:
-    seen: set[str] = set()
-    valid: list[Assessment] = []
+    catalog_map = {item.name.casefold(): item for item in catalog}
+    result = []
     for name in names:
-        item = match_assessment_name(name, catalog)
-        if item and item.name.casefold() not in seen:
-            valid.append(item)
-            seen.add(item.name.casefold())
-    return valid
+        name_folded = name.casefold().strip()
+        # exact match first
+        if name_folded in catalog_map:
+            result.append(catalog_map[name_folded])
+            continue
+        # fuzzy: check if any catalog name contains the candidate name or vice versa
+        for key, item in catalog_map.items():
+            if name_folded in key or key in name_folded:
+                result.append(item)
+                break
+    return result
