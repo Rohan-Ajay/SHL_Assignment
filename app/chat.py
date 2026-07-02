@@ -154,7 +154,7 @@ def item_has_technical_fit(item: Assessment) -> bool:
 
 def has_retrieval_confidence(results) -> bool:
     top_score = results[0].score if results else 0.0
-    return top_score > 0.03
+    return top_score > 0.0
 
 
 def to_recommendation(item: Assessment, query: str) -> Recommendation:
