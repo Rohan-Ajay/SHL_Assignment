@@ -127,14 +127,11 @@ def handle_compare(messages: list[Message], catalog: list[Assessment]) -> ChatRe
 
 def filter_results_for_slots(results, slots):
     filtered = []
-    needs_technical_fit = query_requires_technical_fit(slots)
     for result in results:
         item = result.assessment
         if slots.max_duration_minutes and item.duration_minutes and item.duration_minutes > slots.max_duration_minutes:
             continue
         if slots.test_types and item.test_type and not set(slots.test_types).intersection(item.test_type):
-            continue
-        if needs_technical_fit and not item_has_technical_fit(item):
             continue
         filtered.append(result)
     return filtered
@@ -153,8 +150,7 @@ def item_has_technical_fit(item: Assessment) -> bool:
 
 
 def has_retrieval_confidence(results) -> bool:
-    top_score = results[0].score if results else 0.0
-    return top_score > 0.0
+    return len(results) > 0
 
 
 def to_recommendation(item: Assessment, query: str) -> Recommendation:

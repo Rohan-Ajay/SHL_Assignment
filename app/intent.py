@@ -141,9 +141,7 @@ def extract_slots(messages: list[Message]) -> Slots:
 
 
 def enough_context(slots: Slots) -> bool:
-    return bool(slots.skills or slots.role or slots.test_types) and (
-        bool(slots.seniority) or bool(slots.max_duration_minutes) or len(slots.skills) >= 2
-    )
+    return bool(slots.skills or slots.role or slots.test_types)
 
 
 def extract_compare_names(messages: list[Message], known_names: list[str]) -> list[str]:
