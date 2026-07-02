@@ -7,4 +7,5 @@ rank-bm25==0.2.2
 requests==2.32.3
 scikit-learn==1.6.0
 uvicorn[standard]==0.34.0
+groq==0.13.0
 
