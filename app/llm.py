@@ -72,25 +72,62 @@ def _call_openai(messages: list[dict], candidates: list[Assessment]) -> dict | N
 
 def _call_groq(messages: list[dict], candidates: list[Assessment]) -> dict | None:
     api_key = os.getenv("GROQ_API_KEY")
-    logging.warning(f"[LLM] _call_groq entered, key present: {bool(api_key)}")
     if not api_key:
-        logging.warning("[LLM] no GROQ_API_KEY")
         return None
     try:
         from groq import Groq
         client = Groq(api_key=api_key, timeout=LLM_TIMEOUT_SECONDS)
+
+        # Number the candidates so LLM picks by index, not by name
+        numbered = "\n".join(
+            f"{i}. {item.name} | types={item.test_type} | duration={item.duration_minutes}min | {item.description[:100] if item.description else ''}"
+            for i, item in enumerate(candidates)
+        )
+
+        selection_prompt = f"""You are an SHL assessment recommender.
+Given the conversation and the numbered candidate list below, pick the most relevant assessments.
+Return ONLY a JSON object with:
+- "reply": a one-sentence explanation
+- "indices": a list of integer indices (0-based) from the candidate list
+- "end_of_conversation": true if you are providing a final shortlist, false otherwise
+
+Candidate list:
+{numbered}
+
+Pick the best matches. Return only valid indices from 0 to {len(candidates)-1}."""
+
         response = client.chat.completions.create(
             model=os.getenv("GROQ_MODEL", "llama-3.1-8b-instant"),
             response_format={"type": "json_object"},
             messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": f"Candidates:\n{_build_candidate_payload(candidates)}"},
+                {"role": "system", "content": selection_prompt},
                 *messages,
             ],
         )
-        result = _parse_response(response.choices[0].message.content or "{}")
-        logging.warning(f"[LLM] Groq result: {result}")
-        return result
+
+        raw = _parse_response(response.choices[0].message.content or "{}")
+        logging.warning(f"[LLM] Groq index response: {raw}")
+        if not raw:
+            return None
+
+        # Convert indices back to actual catalog items
+        indices = raw.get("indices", [])
+        selected = []
+        for idx in indices:
+            if isinstance(idx, int) and 0 <= idx < len(candidates):
+                item = candidates[idx]
+                selected.append({
+                    "name": item.name,
+                    "url": item.url,
+                    "test_type": item.test_type,
+                })
+
+        return {
+            "reply": raw.get("reply", "Here are SHL assessments that match your request."),
+            "recommendations": selected,
+            "end_of_conversation": raw.get("end_of_conversation", False),
+        }
+
     except Exception as e:
         logging.warning(f"[LLM] Groq error: {e}")
         return None
